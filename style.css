@@ -1,0 +1,91 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Popins' sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+     */
+
+    display: grid;
+    place-items: center;
+
+    background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.game-info{
+    background-color: rgba(255,255,255,0.15);
+    color: white;
+    top: 2rem;
+    left: 50%;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 2px solid rgba(255,255,255,0.25);
+}
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 1rem;
+    border: rgba(255,255,255,1);
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   /* for square use aspect ratio property */
+   aspect-ratio: 1/1; 
+
+}
+
+.box{
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1, .box2, .box4, .box5 {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3,.box6{
+    border-bottom: 2px solid white;
+
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    bottom: 3rem;
+    left: 50%;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0.5rem 2rem;
+    /* display: none; */
+
+}
+
+.btn.active{
+    display: flex;
+
+}
+
+.win{
+    background-color: rgba(0,255,0,0.3);
+}
